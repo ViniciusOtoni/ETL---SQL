@@ -96,8 +96,6 @@ city_sales_summary AS (
     FROM monthly_summary
 )
 
--- Selecione os dados para verificar antes de inserir
--- SELECT * FROM city_sales_summary
 
 INSERT INTO processed.SalesDataProcessed (ProductCategory, Product, QuantityOrdered, PriceEach, OrderDate, 
     [Month], Sales, City, [Hour], TimeOfDay, TotalSalesCategory, TotalSalesCategoryMonthly, TotalQuantityCategory,
